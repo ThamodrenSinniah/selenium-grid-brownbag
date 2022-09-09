@@ -1,15 +1,14 @@
 from behave import fixture, use_fixture
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
-from webdriver_manager.chrome import ChromeDriverManager
-
+from lib.desired_capabilities import CHROME_DESIRED_CAPS, FIREFOX_DESIRED_CAPS
 
 @fixture
 def browser(context):
     options = webdriver.ChromeOptions()
     options.add_argument(f'--lang=en')
     options.add_argument('--window-size=1920,1080')
-    context.driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
+    context.driver = webdriver.Remote('http://localhost:4444', CHROME_DESIRED_CAPS, options=options)
     context.driver.maximize_window()
     context.driver.implicitly_wait(0.5)
 
