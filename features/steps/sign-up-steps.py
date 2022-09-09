@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as ec
 
 @When('I am at VSM Login Page')
 def go_to_login_page(context):
-    context.driver.get('https://e2e.login.vistasoftmonitor.com/')
+    context.driver.get('https://login.duerrdental.com/')
     context.wait.until(ec.presence_of_element_located((By.ID, "email")))
 
 
