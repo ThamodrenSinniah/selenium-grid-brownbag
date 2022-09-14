@@ -6,6 +6,7 @@ Base Selenium Behave with simple Page verifications
 * virtualenv
 * `java 11`
 * `docker`
+* Download the `selenium-server-4.4.0.jar` file from [Selenium Downloads](https://www.selenium.dev/downloads/)
 
 # Setup
 - Setup Virtual Environment
@@ -30,6 +31,8 @@ pip install -r requirements.txt
 3. Setup Grid Hub
 4. Setup Grid Nodes and Register them to the Hub 
 5. Run Grid and Nodes on Containers with Docker Compose
+
+
 
 # Grid Node and Hub
 ![nodenhub](./assets/nodenhub.png)
