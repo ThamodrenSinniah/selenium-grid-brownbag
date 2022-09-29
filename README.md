@@ -6,7 +6,8 @@ Base Selenium Behave with simple Page verifications
 * virtualenv
 * `java 11`
 * `docker`
-* Download the `selenium-server-4.4.0.jar` file from [Selenium Downloads](https://www.selenium.dev/downloads/)
+* Download the `selenium-server-4.4.0.jar` file from [Selenium](https://www.selenium.dev/downloads/)
+* Download the drivers : [Geckodriver](https://github.com/mozilla/geckodriver/releases) and [ChromeDriver](https://chromedriver.chromium.org/downloads)
 
 # Setup
 - Setup Virtual Environment
